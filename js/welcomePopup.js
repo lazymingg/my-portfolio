@@ -18,7 +18,7 @@ function showPopup() {
       tag = "",
       writingTag = false,
       tagOpen = false,
-      typeSpeed = 10,
+      typeSpeed = 5,
       tempTypeSpeed = 0;
   
     let type = function () {
