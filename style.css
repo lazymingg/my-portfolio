@@ -50,6 +50,7 @@ body {
 /* Navigation Links */
 .topNav a {
   padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
   text-decoration: none;
   font-size: var(--font-size-lg);
   font-weight: 500;
@@ -97,14 +98,16 @@ body {
   --color-primary-border: rgba(94, 234, 212, 0.5);
   
   /* Background Colors */
-  --color-background: rgb(15, 23, 42);
+  --color-background-light: rgb(15, 23, 42);
+  --color-background: #0c1222;
   --color-background-nav: rgba(15, 23, 42, 0.9);
   --color-background-hover: seashell;
   
   /* Text Colors */
   --color-text-primary: rgb(226, 232, 240);
-  --color-text-secondary: rgb(148, 163, 184);
-  
+  /* --color-text-secondary: rgb(148, 163, 184); */
+  /* --color-text-primary: #c9d7e3; */
+  --color-text-secondary: #b0a99f;
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -467,7 +470,7 @@ html {
 body {
   overflow-x: hidden;
   /* overflow-y: hidden; */
-  background-color: rgb(15 23 42);
+  background-color: var(--color-background);
   font-family: "Inter", serif;
   margin: 0;
   padding: 0;

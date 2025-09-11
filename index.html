@@ -17,12 +17,12 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <style>
-    /* Main color */
+    /* Main color - Unified with style.css */
     :root {
-      --back-ground: rgb(15, 23, 42);
-      --brigher-text: rgb(226, 232, 240);
-      --darker-text: rgb(148, 163, 184);
-      --green-highlight: rgb(94, 234, 212);
+      --color-background: rgb(15, 23, 42);
+      --color-text-primary: rgb(226, 232, 240);
+      --color-text-secondary: rgb(148, 163, 184);
+      --color-primary: rgb(94, 234, 212);
     }
   </style>
 </head>
@@ -64,9 +64,9 @@
   <!------Top Nagivation----->
   <nav class="topNav" id="topNav">
     <a class="active" href="#">LazyMingg</a>
-    <button class="hambergerButton" onclick="hambergerMenu()">
+    <button class="hambergerButton" onclick="hambergerMenu()" aria-label="Toggle navigation menu">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="hambergerIcon">
+        class="hambergerIcon" role="img" aria-label="Menu icon">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     </button>
@@ -83,11 +83,11 @@
   <div id="overlay" class="overlay">
     <div id="popup" class="popup">
       <pre id="typewriter">
-<span class="var-highlight">let</span> <span class="key-highlight">baseInfomation</span> = {
+<span class="var-highlight">let</span> <span class="key-highlight">baseInformation</span> = {
     <span class="key-highlight">name:</span> <span class="string-highlight">'LazyMing'</span>,
-    <span class="key-highlight">job Title:</span> <span class="string-highlight">'Professional Couch Potato, Full Stack Wizard'</span>,
-    <span class="key-highlight">hoobies:</span> <span class="string-highlight">'I enjoy making perfect, beautiful software, or maybe a nap first :D.'</span>,
-    <span class="key-highlight">Motto:</span> <span class="string-highlight">'Perfect the small things, and watch them grow into something big.'</span>
+    <span class="key-highlight">jobTitle:</span> <span class="string-highlight">'Full Stack Developer | Web Exploit | System hacking'</span>,
+    <span class="key-highlight">hobbies:</span> <span class="string-highlight">'I enjoy making perfect, beautiful software, doing web exploit and binary exploit.'</span>,
+    <span class="key-highlight">motto:</span> <span class="string-highlight">'Make it exist then perfect it.'</span>
 };
 </pre>
     </div>
@@ -105,12 +105,9 @@
       <div class="heroContainer">
         <div class="heroText">
           <h1>Hi, I'm LazyMing</h1>
-          <p>Software Engineer | Full Stack Developer</p>
+          <p>Full Stack Developer | Web Exploit | System hacking</p>
           <p>
-            This page is my personal portfolio, which i build for fun and
-            maybe it will be my future portfolio the content on this page is
-            not my real experience or my real information, it's just a fun
-            project.
+            I'm a passionate full-stack developer with a keen interest in creating secure, efficient, beutiful, responsive web applications. I'm also interest in Cybersecurity.
           </p>
         </div>
         <div class="heroImage">
@@ -130,9 +127,10 @@
         <div class="skillCard">JavaScript</div>
         <div class="skillCard">C++</div>
         <div class="skillCard">Python</div>
-        <div class="skillCard">Java</div>
-        <div class="skillCard">Spring</div>
-        <div class="skillCard">React</div>
+        <!-- <div class="skillCard">Java</div> -->
+        <!-- <div class="skillCard">Spring</div> -->
+        <!-- <div class="skillCard">React</div> -->
+        <div class="skillCard">Vue.js</div>
         <div class="skillCard">Node.js</div>
         <div class="skillCard">Express</div>
         <div class="skillCard">SQL</div>
@@ -145,7 +143,21 @@
     <div class="projectSection">
       <h2>PROJECTS</h2>
       <div class="projectContainer">
-        <a href="https://lazymingg.github.io/pomodoro_timer/" target="_blank" class="projectCard">
+        <a href="https://lazymingg.github.io/Beutiful_heart_drawing/" target="_blank" class="projectCard">
+          <div>
+            <img src="assets/picture/heroImg.png" alt="project 1" class="projectPicture" />
+          </div>
+          <div class="projectText">
+            <h3>Heart Drawing</h3>
+            <p>Wanna see some love, clicked me :D.</p>
+            <div class="skillContainer">
+              <div class="skillCard skillCardInProjectSection">HTML</div>
+              <div class="skillCard skillCardInProjectSection">CSS</div>
+              <div class="skillCard skillCardInProjectSection">JavaScript</div>
+            </div>
+          </div>
+        </a>
+        <a href="https://lazymingg.github.io/pomodoro-app/" target="_blank" class="projectCard">
           <div>
             <img src="assets/picture/vue.svg" alt="project 1" class="projectPicture" />
           </div>
@@ -160,7 +172,7 @@
             </div>
           </div>
         </a>
-        <div class="projectCard">
+        <!-- <div class="projectCard">
           <div>
             <img src="assets/picture/heroImg.png" alt="project 1" class="projectPicture" />
           </div>
@@ -179,8 +191,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="projectCard">
+        </div> -->
+        <!-- <div class="projectCard">
           <div>
             <img src="assets/picture/heroImg.png" alt="project 1" class="projectPicture" />
           </div>
@@ -199,27 +211,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="projectCard">
-          <div>
-            <img src="assets/picture/heroImg.png" alt="project 1" class="projectPicture" />
-          </div>
-          <div class="projectText">
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam quidem, voluptates, quod, quae quia quibusdam quos quas
-              exercitationem
-            </p>
-            <div class="skillContainer">
-              <div class="skillCard skillCardInProjectSection">HTML</div>
-              <div class="skillCard skillCardInProjectSection">CSS</div>
-              <div class="skillCard skillCardInProjectSection">
-                JavaScript
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -229,8 +221,7 @@
     <div class="contactSection">
       <h2>GET IN TOUCH</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        quidem, voluptates, quod, quae quia quibusdam quos quas exercitationem
+        I have strong self-learning skills and am always ready to work with you on anything. Even if I don't know something yet, I am willing to learn it.
       </p>
       <a href="mailto:minhnguyen.080505@gmail.com">Say Hi</a>
     </div>
