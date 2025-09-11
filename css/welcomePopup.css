@@ -10,6 +10,17 @@
     backdrop-filter: blur(10px);
   }
 
+  /* Define missing variables for popup */
+  .popup {
+    --light-background: #222831;
+    --text-color: #f8f8f2;
+    --selective-yellow: #ffb703;
+    --sky-blue: #8ecae6;
+    --gray-background: #eeeeee;
+    --green-highlight: rgb(94, 234, 212);
+    --back-ground: rgb(15, 23, 42);
+  }
+
   .popup {
     position: fixed;
     top: 50%;

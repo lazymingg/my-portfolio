@@ -130,29 +130,6 @@ body {
   
   /* Shadows */
   --shadow-sm: 0px 0px 7px #222831;
-
-  --sky-blue: #8ecae6ff;
-  --blue-green: #219ebcff;
-  --prussian-blue: #023047ff;
-  --selective-yellow: #ffb703ff;
-  --ut-orange: #fb8500ff;
-
-  --gray-background: #eeeeee;
-  --dark-background: #393e46;
-  --light-background: #222831;
-  --highlight-background: #00adb5;
-
-  /* Add complementary colors */
-  --text-color: #f8f8f2;
-  --background-color: #282a36;
-  --highlight: #ff79c6;
-  --string-color: #ffb86c;
-
-  --oxford-blue: #0a1128ff;
-  --penn-blue: #001f54ff;
-  --indigo-dye: #034078ff;
-  --cerulean: #1282a2ff;
-  --white: #fefcfbff;
 }
 
 /* ******************** */
@@ -171,7 +148,7 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: var(--brigher-text);
+  color: var(--color-text-primary);
   margin-right: 3.5rem;
 }
 .hambergerIcon {
@@ -503,7 +480,19 @@ body {
     display: block !important;
   }
   .navBar {
-    display: none ;
+    display: none;
+  }
+  
+  .navBar.show {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background-nav);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
   }
 }
 

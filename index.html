@@ -17,12 +17,12 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
   <style>
-    /* Main color - Unified with style.css */
+    /* Main color */
     :root {
-      --color-background: rgb(15, 23, 42);
-      --color-text-primary: rgb(226, 232, 240);
-      --color-text-secondary: rgb(148, 163, 184);
-      --color-primary: rgb(94, 234, 212);
+      --back-ground: rgb(15, 23, 42);
+      --brigher-text: rgb(226, 232, 240);
+      --darker-text: rgb(148, 163, 184);
+      --green-highlight: rgb(94, 234, 212);
     }
   </style>
 </head>
@@ -64,9 +64,9 @@
   <!------Top Nagivation----->
   <nav class="topNav" id="topNav">
     <a class="active" href="#">LazyMingg</a>
-    <button class="hambergerButton" onclick="hambergerMenu()" aria-label="Toggle navigation menu">
+    <button class="hambergerButton" onclick="hambergerMenu()">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="hambergerIcon" role="img" aria-label="Menu icon">
+        class="hambergerIcon">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     </button>
@@ -83,11 +83,11 @@
   <div id="overlay" class="overlay">
     <div id="popup" class="popup">
       <pre id="typewriter">
-<span class="var-highlight">let</span> <span class="key-highlight">baseInformation</span> = {
+<span class="var-highlight">let</span> <span class="key-highlight">baseInfomation</span> = {
     <span class="key-highlight">name:</span> <span class="string-highlight">'LazyMing'</span>,
-    <span class="key-highlight">jobTitle:</span> <span class="string-highlight">'Full Stack Developer | Web Exploit | System hacking'</span>,
-    <span class="key-highlight">hobbies:</span> <span class="string-highlight">'I enjoy making perfect, beautiful software, doing web exploit and binary exploit.'</span>,
-    <span class="key-highlight">motto:</span> <span class="string-highlight">'Make it exist then perfect it.'</span>
+    <span class="key-highlight">job Title:</span> <span class="string-highlight">'Full Stack Developer | Web Exploit | System hacking'</span>,
+    <span class="key-highlight">hoobies:</span> <span class="string-highlight">'I enjoy making perfect, beautiful software, doing web exploit and binary exploit.'</span>,
+    <span class="key-highlight">Motto:</span> <span class="string-highlight">'Make it exist then perfect it.'</span>
 };
 </pre>
     </div>
@@ -107,7 +107,7 @@
           <h1>Hi, I'm LazyMing</h1>
           <p>Full Stack Developer | Web Exploit | System hacking</p>
           <p>
-            I'm a passionate full-stack developer with a keen interest in creating secure, efficient, beutiful, responsive web applications. I'm also interest in Cybersecurity.
+            I'm a passionate full-stack developer with a keen interest in creating secure, efficient, beautiful, responsive web applications. I'm also interested in Cybersecurity.
           </p>
         </div>
         <div class="heroImage">
