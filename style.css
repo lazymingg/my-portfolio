@@ -210,8 +210,11 @@ body {
 
 .heroImage img {
   border-radius: var(--border-radius-md);
-  width: 50vw;
+  width: min(70vw, 735px);
+  max-width: 100%;
   height: auto;
+  aspect-ratio: 735 / 297;
+  object-fit: cover;
 }
 
 .heroText {
@@ -477,10 +480,13 @@ body {
     /* for the social bar */
   }
   .hambergerButton {
-    display: block !important;
+    display: none;
   }
   .navBar {
     display: none;
+    flex-wrap: wrap;
+    /* phan tu rot xuong ben phai */
+
   }
   
   .navBar.show {
